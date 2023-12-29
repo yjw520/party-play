@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/circle/index",
+    "pages/my/index",
+    "pages/guess-category/index",
+    "pages/guess-category/category-process/index",
+    "pages/barrage/index",
+    "pages/test/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "party-play",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/image/game-center.png",
+        "selectedIconPath": "static/image/game-center-active.png",
+        "text": "游戏中心"
+      },
+      {
+        "pagePath": "pages/circle/index",
+        "iconPath": "static/image/circle.png",
+        "selectedIconPath": "static/image/circle-active.png",
+        "text": "圈子"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/image/my.png",
+        "selectedIconPath": "static/image/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "party-play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "sass-loader": "^10.5.0"
+  },
+  "dependencies": {
+    "uview-ui": "^2.0.36"
+  }
+}

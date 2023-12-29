@@ -1,0 +1,1 @@
+<view class="pro-wrap"><block wx:if="{{count===0}}"><view class="wrap-text">{{''+text+''}}</view></block><block wx:else><view class="wrap-text">{{''+count+''}}</view></block><button data-event-opts="{{[['tap',[['start',['$event']]]]]}}" bindtap="__e">开始监听陀螺仪变化</button><button data-event-opts="{{[['tap',[['stop',['$event']]]]]}}" bindtap="__e">停止监听陀螺仪变化</button></view>

@@ -1,0 +1,83 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "游戏中心",
+				// "enablePullDownRefresh": true,
+				"backgroundColor": "#000"
+			}
+		},
+		{
+			"path": "pages/circle/index",
+			"style": {
+				"navigationBarTitleText": "圈子"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/guess-category/index",
+			"style": {
+				"navigationBarTitleText": "你演我猜"
+			}
+		},
+		{
+			"path": "pages/guess-category/category-process/index",
+			"style": {
+				"navigationBarTitleText": "你演我猜"
+			}
+		},
+		{
+			"path": "pages/barrage/index",
+			"style": {
+				"navigationBarTitleText": "手持弹幕"
+			}
+		},
+		{
+			"path": "pages/test/index",
+			"style": {
+				"navigationBarTitleText": "手持弹幕"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/index",
+			"iconPath": "static/image/game-center.png",
+			"selectedIconPath": "static/image/game-center-active.png",
+			"text": "游戏中心"
+		}, {
+			"pagePath": "pages/circle/index",
+			"iconPath": "static/image/circle.png",
+			"selectedIconPath": "static/image/circle-active.png",
+			"text": "圈子"
+		}, {
+			"pagePath": "pages/my/index",
+			"iconPath": "static/image/my.png",
+			"selectedIconPath": "static/image/my-active.png",
+			"text": "我的"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "party-play",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		// "usingComponents": {
+		// 	"van-button": "./node_modeules/@vant/weapp/dist/button/index"
+		// }
+	},
+	"uniIdRouter": {}
+}
