@@ -6,9 +6,9 @@
 		{
 			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "游戏中心",
+				"navigationBarTitleText": "游戏中心"
 				// "enablePullDownRefresh": true,
-				"backgroundColor": "#000"
+				// "backgroundColor": "#000"
 			}
 		},
 		{
@@ -26,7 +26,8 @@
 		{
 			"path": "pages/guess-category/index",
 			"style": {
-				"navigationBarTitleText": "你演我猜"
+				"navigationBarTitleText": "你演我猜",
+				"backgroundColor": "#000"
 			}
 		},
 		{

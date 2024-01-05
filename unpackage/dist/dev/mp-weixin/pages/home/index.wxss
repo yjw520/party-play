@@ -30,58 +30,8 @@
   height: 100vh;
   overflow: hidden;
 }
-.home-wrap .card-wrap {
-  display: flex;
-  height: 180px;
-  padding: 20px 30px;
-  justify-content: space-between;
-}
-.home-wrap .card-wrap .guess-card {
-  width: 130px;
-  height: 100%;
-  color: #fff;
-  background-image: linear-gradient(274deg, #c05e4b, #b46870, #a27295, #867cbb);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 10px;
-}
-.home-wrap .card-wrap .guess-card .guess-img {
-  width: 78px;
-  height: 77px;
-}
-.home-wrap .card-wrap .hand-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 180px;
-  height: 100%;
-  justify-content: space-between;
-}
-.home-wrap .card-wrap .hand-wrap .barrage-card {
-  color: #fff;
-  height: 50px;
-  background-image: linear-gradient(25deg, #d2443e, #e37469, #f1a097, #f9cbc7);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home-wrap .card-wrap .hand-wrap .lamp-card {
-  color: #fff;
-  height: 118px;
-  border-radius: 10px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAAB2CAMAAAC071LGAAABelBMVEX/0gf/0Aj/1wX/3AP/1gb/2QX/1Qb/0An/2QT/1Ab/ywr/3gL/ygr/0Qj/1gX/1Af/zQr/3QL/2wP/4QEAAAD/0wj/0Qf/1gX/1wT/ywr/0gn/0wb/0Qf/zgr/3AL/zwj/2gP/ygn/0gf/2QT/3QL/1QX/0Aj/2wL/1QX/1Qf/ywz/1Ab/2AT/0gb/0Af/0gf/2AX/0wb/2gP/zgj/zwn/1wX/2QP/ywn/0Af/0An/zwj/3AL/2wP/0wf/3gH/zAn/zgn/1Qb/2AT/zQn/2AT/ygn/2AT/4AD/1wT/0wX/1wT/zwj/1QX/0wb/1gj/4AL/4QH/0wX/4QH/0wb/1Ab/1Af/0wf/zgr/1wX/zA3/ywr/ygj/ywr/4AD/ywr/ywr/ygv/0wb/0gT/4AH/5gD/ywr/yQr/0wX/0wX/3wD/ywv/4QH/ywr/2QD/1Af/1Ab/4QD/4QL/xQj/3gD/ygv/2Q3/4QH/ywr/zgj/0gb/ywr/1QX/1wX/1gUpTBV1AAAAfnRSTlP//////////////////////////wBA//7+k5P+/pP///7+/v7+//7//pNA/v7//pP///////7+//+T/v7+/////v78////+v71//hA9NMfndNo9J3Ist40MxR6P51T9LIwej/IFMhokjRojbLeFI1TM5IfH1sU3tMfW5Iwkp0cZaZdAAAIbUlEQVR4nL3c91cbRxAH8BMOBGFbREiWlIggLBCQgAgdB9vIFNsY417i9N577/979k5XdvdmdmbuROYBjx8/+jI3s3fiyauG9cEvb331IqNeJup1vV6z6yW6XoHruw///DukhubPvhlTdfEcWdsvOOvaXMEoz6za5HmyuuNoPX2QmN983xerym1umWTbzEGv4ubx8Se/huaffg/JjKTd5h2LPGmbGWinefzO3b7505hMo53mdYsMmGn0Vad5/HFg/ksjk+3hMtspFwqX0mYSTZgb/yjzGwaZSronSBk2e+0c5mKnVHrmVd+xzG40bt5Ik2GzV8turpdKpX+96nu2eTuTGUgZ7GcS7TI3FLl04v1hk1XQ1+XmdC/7tQybnWjcvOeLVXl2OxPdgZCvgeRCDTG70Kh5MSSXvLcBs2N4IGR7l1BmzxObixG55L0KmfGkReRCGzejaMQcp4yaUTREPsDITjOGhs0aGTWPnYPVkpQJswcvF9CcNIbLPHYRREtSdvazKngjuiYGZR4DJ54kZcoMowHygkF2mcGeTpldZKI3YDRJdpohtE2Gd0lUTcIMoYnGoMxAe1hkcGMn1aXMaXSbSpkyp5OWpEz2M4SukWTKnEJLUmaZbbRlBsik2V7jkpTTt4MMtNkbEJk2W0lLUmaaTbRh9o/LWcwmWpIy12yg9d6AyRyz3h7XqdNnJrOO9mLxVYTMMmtJx2YWmW3W0ElvYGSeOUFHZtchI4s5QUdm/241lzluj9DMJAvMMTrsjWJw65fLHCXdNzvPRRnN0dE0NDvIbHOYdPBIhpuy0NxHB72ROmLkNbNTlpoDtG/ec6UsMPfvAXwznyw1+7dbqjdcvSwzB3dbyszZJVnNCu0Zt36w+fbGRmu91Vpf3zm41tse23aje5yNncPsnW+DRwzTfOF5qzZUqZfQ2jg4OOj1etvaqzh3sSdJWWLudru1drPbbS4cnRyh2wQzAxW+jPWD3s7y8qWoJpeX1ddyDFS/t1oFo9sVpVZrK0+zubq62lxUPxYXF4vFhb3iyEhRfYf1nPrq1+bM6OjozP6NG/73fvx9dHS8f3x03Dg+Oto/ZpmTog7ENb3ai5GEXY3DQ2UmSmimb5a0kpNLh8PTDPPt0zI3b8V/cDZ5ZnjY743B5iwgr/p9KiYP02Rlnts4DXMzuMBk5BVF5qC9C4WWAC0ji8ybfspcc2FubtDmZjTD+FUPyUyzmqmDNUdkgXmz3xh8s9oHgzTHZL65HpP5Zi5aRmabNbLAzETLyFxz0hiq6AEdm3loGXmkxEu5oZFF5gJnepDkRZ080mGZl3TyMH3g0MwctIzMy9kky3JWMy+vWR0xjKrLycMrMnNhjhrUopRZvWGTGYPDNKvKYU7O8Pyc02S5eW4ys3kvRabNxsTInLPzSpzDxc1Omkz2BkTOYnah8ZvS8CBn1YK4MRiDYwIwO8YHaobJRG+AKVMDevryGciMJ43834u5/Li9UYLJbvP0xBnYjE4PxIyRnWYkZXdvqJRRM5I03Bso2dUbDf1cxL0Gt1TKqBk5MYHm1CbhXIPqqQBaW2jKvhg3w2jIjKesCiMbp09uc4Rk3AyigX72HwmIc950iNGLcCskO8zQyEubHY2B54xNjLDgR0lRyk5zYSdlTv1fon2QY5n1Oyl2byRkpzk98mwzcMSgzRQZNF9JyITZHnlmbyDLjzA7L7+gCDJhtqM2/lenSaYMmcmUIXQwltlm8xmT/viZkTJgplMGzP7yk+S8rD/N082MlNPm8DmizGymzDAbTZ2YuyyybTafCjDNVsoss9bTcT+zGiNl3uSRjeXtH+SymOOko5y7TLJlHuKRDXMqZaY5RodvTRDLDzPDtyVOc7yv5eYI3TdTy08r/aEMm5wsFZDMNYdoYcqGmU+Ozdq+zmLuo6Vk7dAvIEdzYw0mn/FuM80BWkpObq4k5NBs7OtsZv9s6jVl5NgsIvfNWMois3qaF7zpJ6mwN2RkH72Fpuz3c/DOuf8Oul/hMGurin/T3sBeEJJDM2thm+b0JtHNRX7Vh4aGGpub9Tr0nAusoDeY208rV8oys09OqqHsdU7OErI/4Ean1y6XZ8tTU1P5zSZZw5c6KF6Z3fergXPGd16ZSPph92xS5fJuWb2A2dn56DXwzR2EnJTqGrtpOuijz+mt6WlNaZZGTtcu24ylDAXfqNfDq7UTkUcPR2f8MC+7Li6e+SzXvMAn6/jG2hX9b86tgZgzkYeGZuZnxV5VU4Mw070M1tLEWjkLehDmrClPTEyoSx44tZ++uVPKRN5S5PmyQoujLg/AnEW8oiZZ36zU/7tZMOW0CsihWdrUuc15yJFZiHaTaXOmxmis9cmxWYQmLkHSnCnlUkROzBJ0TnO29ReJdbPgQsxnzkReSsi6uVzmDupc5ky9rJNNM7c/iLHhNN/KTVa7OwOaMN90mbOsv0ODbJtZ6Cm3uVJxmLOQ/X2N9wYP7TTvVlzmLFMu3CQOMwPtugR9Mm4eCDnVGxy0wxyQUXOWkZEmQ2ZyUOOtcTMgV7yPQHKGwbyibqJSle4NelCjOYfkivfFgMgNiAzmTKGxnCNyxbsrIDcYpyJOzu6mRsyRWJmrJ/yUcbO5SWizCw2a+1dfUA+96iObfEs+mDEybi5PYU8QwHbWyJV7XvWZbZaT/ZtVqRm9TZx3tbJfP6jPzvr89MguM4YGctbFlR+Dzyh7nG8wO8jY3OjXLohOm42UP+5/rtrdOwnZuf7AP4F9xGDnrAqaealL0CDf/zn8zL1vn/A2NmBuAMuPb4bGh52z0Rhff5J8tuGDp9kOGQSZNANoM2d9YFR++1L/PMZq9ftHd06o9Zeaz0vg8pOYy7P2zDPMCfnh/XvvhtT/AGRmz9FK4umjAAAAAElFTkSuQmCC);
-  display: flex;
-}
-.home-wrap .card-wrap .hand-wrap .lamp-card .lamp-text {
-  margin-top: 20px;
-  margin-left: 22px;
-}
-.home-wrap .card-wrap .hand-wrap .lamp-card .lamp-img {
-  width: 69px;
-  height: 69px;
-  align-self: center;
+.home-wrap .swiper-wrap {
+  margin: 22rpx 26rpx;
 }
 .night-wrap {
   position: absolute;
@@ -96,9 +46,9 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2px;
+  height: 4rpx;
   background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
-  border-radius: 999px;
+  border-radius: 1998rpx;
   -webkit-filter: drop-shadow(0 0 6px #699bff);
           filter: drop-shadow(0 0 6px #699bff);
   -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
@@ -107,9 +57,9 @@
 .shooting-star::before {
   content: "";
   position: absolute;
-  top: calc(50% - 1px);
+  top: calc(50% - 2rpx);
   right: 0;
-  height: 2px;
+  height: 4rpx;
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
   -webkit-transform: translateX(50%) rotateZ(45deg);
           transform: translateX(50%) rotateZ(45deg);
@@ -120,9 +70,9 @@
 .shooting-star::after {
   content: "";
   position: absolute;
-  top: calc(50% - 1px);
+  top: calc(50% - 1rpx);
   right: 0;
-  height: 2px;
+  height: 4rpx;
   background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
   -webkit-transform: translateX(50%) rotateZ(45deg);
           transform: translateX(50%) rotateZ(45deg);
@@ -133,8 +83,8 @@
           transform: translateX(50%) rotateZ(-45deg);
 }
 .shooting-star:nth-child(1) {
-  top: calc(50% - -74px);
-  left: calc(50% - 161px);
+  top: calc(50% - -148rpx);
+  left: calc(50% - 222rpx);
   -webkit-animation-delay: 4612ms;
   animation-delay: 4612ms;
 }
@@ -143,8 +93,8 @@
   animation-delay: 4612ms;
 }
 .shooting-star:nth-child(2) {
-  top: calc(50% - 196px);
-  left: calc(50% - 203px);
+  top: calc(50% - 292rpx);
+  left: calc(50% - 406rpx);
   -webkit-animation-delay: 9837ms;
   animation-delay: 9837ms;
 }
@@ -153,8 +103,8 @@
   animation-delay: 9837ms;
 }
 .shooting-star:nth-child(3) {
-  top: calc(50% - -150px);
-  left: calc(50% - 255px);
+  top: calc(50% - -300rpx);
+  left: calc(50% - 510rpx);
   -webkit-animation-delay: 1760ms;
   animation-delay: 1760ms;
 }
@@ -163,8 +113,8 @@
   animation-delay: 1760ms;
 }
 .shooting-star:nth-child(4) {
-  top: calc(50% - 174px);
-  left: calc(50% - 83px);
+  top: calc(50% - 248rpx);
+  left: calc(50% - 166rpx);
   -webkit-animation-delay: 1171ms;
   animation-delay: 1171ms;
 }
@@ -173,8 +123,8 @@
   animation-delay: 1171ms;
 }
 .shooting-star:nth-child(5) {
-  top: calc(50% - -87px);
-  left: calc(50% - 104px);
+  top: calc(50% - -174rpx);
+  left: calc(50% - 208rpx);
   -webkit-animation-delay: 1124ms;
   animation-delay: 1124ms;
 }
@@ -183,8 +133,8 @@
   animation-delay: 1124ms;
 }
 .shooting-star:nth-child(6) {
-  top: calc(50% - 40px);
-  left: calc(50% - 217px);
+  top: calc(50% - 80rpx);
+  left: calc(50% - 434rpx);
   -webkit-animation-delay: 1869ms;
   animation-delay: 1869ms;
 }
@@ -193,8 +143,8 @@
   animation-delay: 1869ms;
 }
 .shooting-star:nth-child(7) {
-  top: calc(50% - 127px);
-  left: calc(50% - 61px);
+  top: calc(50% - 254rpx);
+  left: calc(50% - 122rpx);
   -webkit-animation-delay: 6558ms;
   animation-delay: 6558ms;
 }
@@ -203,8 +153,8 @@
   animation-delay: 6558ms;
 }
 .shooting-star:nth-child(8) {
-  top: calc(50% - -192px);
-  left: calc(50% - 103px);
+  top: calc(50% - -384rpx);
+  left: calc(50% - 206rpx);
   -webkit-animation-delay: 3556ms;
   animation-delay: 3556ms;
 }
@@ -213,8 +163,8 @@
   animation-delay: 3556ms;
 }
 .shooting-star:nth-child(9) {
-  top: calc(50% - -151px);
-  left: calc(50% - 162px);
+  top: calc(50% - -302px);
+  left: calc(50% - 324px);
   -webkit-animation-delay: 5542ms;
   animation-delay: 5542ms;
 }
@@ -223,8 +173,8 @@
   animation-delay: 5542ms;
 }
 .shooting-star:nth-child(10) {
-  top: calc(50% - -103px);
-  left: calc(50% - 100px);
+  top: calc(50% - -206rpx);
+  left: calc(50% - 200rpx);
   -webkit-animation-delay: 5156ms;
   animation-delay: 5156ms;
 }
@@ -233,8 +183,8 @@
   animation-delay: 5156ms;
 }
 .shooting-star:nth-child(11) {
-  top: calc(50% - -119px);
-  left: calc(50% - 147px);
+  top: calc(50% - -238rpx);
+  left: calc(50% - 294rpx);
   -webkit-animation-delay: 1146ms;
   animation-delay: 1146ms;
 }
@@ -243,8 +193,8 @@
   animation-delay: 1146ms;
 }
 .shooting-star:nth-child(12) {
-  top: calc(50% - -46px);
-  left: calc(50% - 139px);
+  top: calc(50% - -92rpx);
+  left: calc(50% - 278px);
   -webkit-animation-delay: 3940ms;
   animation-delay: 3940ms;
 }
@@ -257,7 +207,7 @@
     width: 0;
 }
 30% {
-    width: 100px;
+    width: 200rpx;
 }
 100% {
     width: 0;
@@ -268,7 +218,7 @@
     width: 0;
 }
 30% {
-    width: 100px;
+    width: 200rpx;
 }
 100% {
     width: 0;
@@ -279,7 +229,7 @@
     width: 0;
 }
 50% {
-    width: 30px;
+    width: 60rpx;
 }
 100% {
     width: 0;
@@ -290,7 +240,7 @@
     width: 0;
 }
 50% {
-    width: 30px;
+    width: 60rpx;
 }
 100% {
     width: 0;
@@ -302,8 +252,8 @@
             transform: translateX(0);
 }
 100% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    -webkit-transform: translateX(600rpx);
+            transform: translateX(600rpx);
 }
 }
 @keyframes shooting {
@@ -312,8 +262,8 @@
             transform: translateX(0);
 }
 100% {
-    -webkit-transform: translateX(300px);
-            transform: translateX(300px);
+    -webkit-transform: translateX(600rpx);
+            transform: translateX(600rpx);
 }
 }
 @-webkit-keyframes sky {
@@ -341,14 +291,14 @@
 }
 .bulb-container {
   font-size: 1rem;
-  -webkit-perspective: 800px;
-          perspective: 800px;
+  -webkit-perspective: 1600rpx;
+          perspective: 1600rpx;
   position: absolute;
   z-index: 99;
   padding-top: 0.5em;
   margin-bottom: 0.5em;
   top: 0;
-  right: 20px;
+  right: 40rpx;
 }
 .bulb-container::after {
   content: "";
@@ -602,5 +552,132 @@
             filter: saturate(3);
     opacity: 0.7;
 }
+}
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250rpx;
+  margin: 10px;
+  background: linear-gradient(rgba(25, 31, 50, 0.2), rgba(4, 8, 20, 0.01)), rgba(4, 8, 20, 0.8);
+  box-shadow: inset 0 0 0 1px rgba(200, 200, 220, 0.16), inset 0 0 5px -3px var(--color), inset 0 12px 48px 0 rgba(160, 220, 240, 0.08), inset 0 0 120px -100px var(--color);
+  border-radius: 16px;
+  color: var(--color);
+  overflow: hidden;
+}
+.card .button {
+  --w: 180px;
+  --h: 60px;
+  --icon-size: 25px;
+  --text-color: rgb(210 210 240);
+  --box-glow-color: transparent;
+  --box-glow-blur: 20px;
+  position: relative;
+  min-width: var(--w);
+  min-height: var(--h);
+  border-radius: var(--h);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "Montserrat";
+  color: var(--text-color);
+  background: rgba(4, 8, 20, 0.8);
+  box-shadow: 0px 0px 0px 1px rgba(200, 200, 220, 0.22), 0px 0px var(--box-glow-blur) var(--box-glow-color), inset 0 0 26px -10px var(--box-glow-color);
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 500ms ease;
+  z-index: 2;
+}
+.card .button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(200, 200, 220, 0.1);
+  box-shadow: inset 0 0px 24px 0 rgba(170, 230, 250, 0.12);
+  border-radius: var(--h);
+  z-index: 1;
+  transition: box-shadow 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease;
+  transition: transform 500ms ease, box-shadow 500ms ease, -webkit-transform 500ms ease;
+}
+.card .button:active {
+  --box-glow-blur: 36px;
+}
+.card .button:hover,
+.card .button:active {
+  --box-glow-color: var(--color);
+}
+.card .button:hover::before,
+.card .button:active::before {
+  -webkit-transform: translateX(65%);
+          transform: translateX(65%);
+  box-shadow: inset 0 0px 0px 0 transparent;
+}
+.card .button:hover .text,
+.card .button:active .text {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.card .button:hover .icon,
+.card .button:active .icon {
+  -webkit-transform: translateX(calc(var(--w) - var(--icon-size) - 19px));
+          transform: translateX(calc(var(--w) - var(--icon-size) - 19px));
+  color: var(--color);
+}
+.card .button:focus-visible {
+  outline: none;
+}
+.card .button:focus-visible {
+  --box-glow-color: rgba(114, 114, 114, 0.5);
+}
+.card .text,
+.card .icon {
+  z-index: 2;
+}
+.card .icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0;
+  -webkit-transform: translateX(calc((var(--w)) / 2 + 8px));
+          transform: translateX(calc((var(--w)) / 2 + 8px));
+  transition: color 500ms ease, -webkit-transform 500ms ease;
+  transition: transform 500ms ease, color 500ms ease;
+  transition: transform 500ms ease, color 500ms ease, -webkit-transform 500ms ease;
+}
+.card .text {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: "Montserrat";
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--color) 8%, transparent 8%), radial-gradient(var(--color) 8%, transparent 8%), radial-gradient(var(--color) 8%, transparent 8%), radial-gradient(var(--color) 8%, transparent 8%);
+  background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  -webkit-filter: drop-shadow(0 0 6px var(--color));
+          filter: drop-shadow(0 0 6px var(--color));
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color);
+  opacity: 0.2;
+  -webkit-mask-image: radial-gradient(90% 90% at 50% 50%, transparent, black);
+  mask-image: radial-gradient(90% 90% at 50% 50%, transparent, black);
+  -webkit-filter: url(#noiseFilter);
+          filter: url(#noiseFilter);
+  z-index: 1;
 }
 

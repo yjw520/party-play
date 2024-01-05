@@ -166,61 +166,24 @@ var _default = {
   },
   methods: {
     start: function start() {
-      // uni.onGyroscopeChange((res) => {
-      // 	console.log('gyroData.rotationRate.x = ' + res.x)
-      // 	console.log('gyroData.rotationRate.y = ' + res.y)
-      // 	console.log('gyroData.rotationRate.z = ' + res.z)
-      // 	console.log(res);
-      // 	const { x, y, z } = res;
-      // 	if ((x > -1 && x < 1) && (y > -1 && y < 1) && (z > 8 && z < 10)) {
-      // 	    // 手机处于屏幕朝下的状态
-      // 	    console.log("手机处于屏幕朝下的状态");
-      // 	    // 可以在这里根据手机的朝向执行相应的操作
-      // 	  }
-      // });
-      // uni.startGyroscope({
-      // 	interval: "normal",
-      // 	success() {
-      // 		console.log('success')
-      // 	},
-      // 	fail() {
-      // 		console.log('fail')
-      // 	}
-      // })
       wx.startDeviceMotionListening({
+        interval: 'normal',
         success: function success() {
           wx.onDeviceMotionChange(function (res) {
             console.log('=========>6');
             console.log(res);
-            var beta = res.beta; // 获取设备在 beta 轴的旋转角度
-            if (beta > 90 || beta < -90) {
+            var beta = res.beta; // 获取设备在 beta 
+            var gamma = res.gamma;
+            if (gamma > -50) {
               console.log('=====>up');
-            } else {
+            } else if (gamma < -100) {
               console.log('=====>down');
             }
           });
         }
       });
-      // uni.onCompassChange((res) => {
-      // 	console.log('==========>');
-      // 	console.log(res);
-      // });
-      // uni.startCompass();
     },
     stop: function stop() {
-      // uni.offCompassChange(() => {
-      // 	console.log('==========>');
-      // 	console.log(res);
-      // });
-      // uni.stopGyroscope({
-      // 	success() {
-      // 		console.log('stop success!')
-      // 	},
-      // 	fail() {
-      // 		console.log('stop fail!')
-      // 	}
-      // })
-      // uni.stopCompass();
       wx.stopDeviceMotionListening();
     }
   },

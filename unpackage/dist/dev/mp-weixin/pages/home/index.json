@@ -1,8 +1,9 @@
 {
   "navigationBarTitleText": "游戏中心",
-  "backgroundColor": "#000",
   "usingComponents": {
     "u-notice-bar": "/node-modules/uview-ui/components/u-notice-bar/u-notice-bar",
-    "u-transition": "/node-modules/uview-ui/components/u-transition/u-transition"
+    "u-swiper": "/node-modules/uview-ui/components/u-swiper/u-swiper",
+    "u-transition": "/node-modules/uview-ui/components/u-transition/u-transition",
+    "barrage-icon": "/pages/icon/barrage"
   }
 }

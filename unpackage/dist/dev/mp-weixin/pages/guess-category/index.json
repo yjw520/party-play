@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "你演我猜",
+  "backgroundColor": "#000",
   "usingComponents": {
     "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
     "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",

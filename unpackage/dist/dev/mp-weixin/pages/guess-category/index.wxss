@@ -25,16 +25,14 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.u-radio-group {
-  flex-wrap: wrap;
-}
 .u-radio {
-  flex: 1 0 calc(33.33% - 10px) !important;
-  /* 计算宽度，按照每行三个盒子 */
-  height: 100px;
-  margin: 5px;
-  background-color: lightgray;
-  border-radius: 20px;
+  padding: 36rpx 30rpx;
+}
+.cate-wrap {
+  background: Black;
+}
+.cate-wrap .btn-wrap {
+  margin-bottom: 100rpx;
 }
 .cate-wrap .btn-wrap .btn-item {
   flex: 1 0 calc(33.33% - 10px);
@@ -50,5 +48,6 @@
 }
 .cate-wrap .op-wrap .op-time {
   display: flex;
+  padding: 30rpx;
 }
 

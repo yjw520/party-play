@@ -3,8 +3,10 @@
 		<view class="btn-wrap">
 			<u-radio-group 
 			    v-model="category"
-			    placement="row"
+			    placement="column"
 				class="btn-wrap"
+				iconPlacement="right"
+				borderBottom
 			>
 				<u-radio
 				  v-for="(item, index) in categoryList"
@@ -13,13 +15,8 @@
 				  :label="item.name"
 				></u-radio>
 			</u-radio-group>
-			<!-- 				  :label="item.name" -->
-			<!-- 				  :customStyle="{marginBottom: '8px'}" -->
-			<!--
-			<view class="btn-item">
-				<u-button type="primary" text="确定">IT圈</u-button>
-			</view> -->
 		</view>
+		
 		<view class="op-wrap">
 			<view class="op-time">
 				<text>时长：</text>
@@ -142,21 +139,17 @@
 </script>
 
 <style lang="scss">
-	.u-radio-group {
-		flex-wrap: wrap;
-	}
+	// .u-radio-group {
+	// 	flex-wrap: wrap;
+	// }
 	.u-radio {
-		flex: 1 0 calc(33.33% - 10px) !important; /* 计算宽度，按照每行三个盒子 */
-		height: 100px;
-		margin: 5px;
-		background-color: lightgray;
-		border-radius: 20px;
+		padding: 36rpx 30rpx;
 	}
 	.cate-wrap {
+		background:Black;
+
 		.btn-wrap {
-			// display: flex;
-			// flex-wrap: wrap;
-			
+			margin-bottom: 100rpx;
 			.btn-item {
 				flex: 1 0 calc(33.33% - 10px); /* 计算宽度，按照每行三个盒子 */
 				height: 100px;
@@ -170,6 +163,7 @@
 			align-items: center;
 			.op-time {
 				display: flex;
+				padding: 30rpx;
 			}
 		}
 	}
