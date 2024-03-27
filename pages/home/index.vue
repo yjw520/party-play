@@ -107,11 +107,9 @@
 				}
 			},
 			onShow() {
-				console.log(666);
 				this.show = true;
 			},
 			onHide() {
-				console.log('222');
 				this.show = false;
 			}
 	    }

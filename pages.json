@@ -39,7 +39,8 @@
 		{
 			"path": "pages/barrage/index",
 			"style": {
-				"navigationBarTitleText": "手持弹幕"
+				"navigationBarTitleText": "手持弹幕",
+				"navigationStyle": "custom"
 			}
 		},
 		{

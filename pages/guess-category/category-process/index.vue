@@ -33,7 +33,7 @@
 					  const gamma = res.gamma;
 					  if (gamma > -50) {
 						console.log('=====>up');
-					  } else if (gamma < -100) {
+					  } else if (gamma < -80) {
 						console.log('=====>down');
 					  }
 					});

@@ -1,6 +1,6 @@
 <template>
 	<view class="home-wrap">
-		期待
+		敬请期待
 	</view>
 </template>
 

@@ -1,5 +1,11 @@
 <template>
 	<view class="barrage-wrap">
+		<view class="custom-nav-bar">
+			<view class="">
+				<u-icon name="arrow-left" color="#fff"></u-icon>
+				<text>aaa</text>
+			</view>
+		</view>
 		<view class="barrage-text-wrap">
 			<text class="barrage-text" :animation="animationData"
 				:style="{ right: barrageRight + 'px', color: barrageColor, fontSize: fontSize + 'rpx',  }"
@@ -90,13 +96,6 @@
 				fontSize: 250,
 			};
 		},
-		// computed: {
-		// 	fontSize: {
-		// 		get() {
-		// 			return this.slider * 4;
-		// 		}
-		// 	}
-		// },
 		methods: {
 			/**
 			 * 改变文字
@@ -110,7 +109,6 @@
 			 * 改变模式
 			 */
 			changePattern(value) {
-				console.log(value);
 				this.clearAnimation();
 				this.rollAnimation();
 			},
@@ -124,10 +122,7 @@
 			 * 改变大小
 			 */
 			changeSize(value) {
-				console.log('====>v');
-				console.log(value);
 				this.fontSize = value * 5;
-				console.log(this.fontSize);
 				this.clearAnimation();
 				this.rollAnimation();
 			},
@@ -157,17 +152,13 @@
 			 * 获取字幕长度
 			 */
 			getBarrageLen() {
-				console.log('==getBarrageLen=====+>');
 				return new Promise((resolve, reject) => {
 					this.$nextTick(() => {
 						const query = uni.createSelectorQuery().in(this);
 						query.select('.barrage-text').boundingClientRect(data => {
-							console.log('22222');
-							console.log(data);
 							const { height } = data;
 							
 							this.barrageLen = height;
-							console.log(-this.barrageLen);
 							this.barrageRight = -this.barrageLen;
 							resolve();
 						}).exec();
@@ -179,12 +170,9 @@
 			  */
 			async rollAnimation() {
 				const res = await this.getBarrageLen();
-				console.log('hhhhhhh', this.barrageLen, this.wH);
 				const startP = this.wH + this.barrageLen;
 				const duration = this.curSpeed;
-				console.log(duration);
 				const barrageAnimation = function() {
-					console.log('hahahahahhaha');
 					if (this.pattern) {
 						this.animation.translateX(`-${startP}px`).rotate(360).step({
 							duration,
@@ -206,7 +194,6 @@
 
 				this.timer = setInterval(() => {
 					barrageAnimation();
-					console.log(666);
 				}, duration + 100);
 			},
 			initRollAnimation() {
@@ -222,15 +209,13 @@
 				this.animationData = this.animation.export();
 			},
 			open(data) {
-			  console.log('=======>a', data);
 			  const { active } = data;
+
 			  this.op = active;
-			  console.log(this.op);
 			  this.patternShow = true;
 			},
 			close() {
 			  this.patternShow = false;
-			  console.log('=====》');
 			  if (this.op === 'text') {
 				  this.text = '';
 			  }
@@ -241,9 +226,7 @@
 			uni.getSystemInfo({
 				success: async function(res) {
 					const { windowHeight } = res;
-					
-					console.log('===getSystemInfo====>');
-					console.log(res);
+
 					that.wH = windowHeight;
 					await that.getBarrageLen();
 				},
@@ -257,8 +240,6 @@
 				// duration:60000,
 				timingFunction: 'linear',
 			});
-			console.log('===animation===>');
-			console.log(animation);
 			this.animation = animation;
 			this.rollAnimation();
 		},
@@ -271,6 +252,15 @@
 <style lang="scss">
 	.barrage-wrap {
 		color: #fff;
+		.custom-nav-bar {
+			display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    height: 44px;
+		    padding: 0 15px;
+		    background-color: #ffffff;
+			margin-top: 30px;
+		}
 		.pop-wrap {
 			padding: 20rpx;
 			.barrage-pattern {

@@ -107,7 +107,6 @@
 				this.show = true;
 			},
 			selectClick(data) {
-				console.log(data);
 				const { value } = data;
 
 				this.time = value;
@@ -116,7 +115,6 @@
 				this.show = false;
 			},
 			start() {
-				console.log(this.category);
 				this.openTip();
 			},
 			openTip() {
@@ -146,8 +144,9 @@
 		padding: 36rpx 30rpx;
 	}
 	.cate-wrap {
-		background:Black;
-
+		// background:Black;
+		background: #00000044;
+		backdrop-filter: blur(2rem);
 		.btn-wrap {
 			margin-bottom: 100rpx;
 			.btn-item {
