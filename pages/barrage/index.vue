@@ -1,9 +1,8 @@
 <template>
 	<view class="barrage-wrap">
 		<view class="custom-nav-bar">
-			<view class="">
-				<u-icon name="arrow-left" color="#fff"></u-icon>
-				<text>aaa</text>
+			<view class="bar-content">
+				<u-icon size="32" name="arrow-left" color="#fff"></u-icon>
 			</view>
 		</view>
 		<view class="barrage-text-wrap">
@@ -253,13 +252,18 @@
 	.barrage-wrap {
 		color: #fff;
 		.custom-nav-bar {
+			position: relative;
+			top: 40rpx;
 			display: flex;
 		    align-items: center;
 		    justify-content: space-between;
 		    height: 44px;
 		    padding: 0 15px;
-		    background-color: #ffffff;
-			margin-top: 30px;
+			color: #fff;
+			z-index: 999;
+			.bar-content {
+				
+			}
 		}
 		.pop-wrap {
 			padding: 20rpx;

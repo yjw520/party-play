@@ -29,13 +29,15 @@
   color: #fff;
 }
 .barrage-wrap .custom-nav-bar {
+  position: relative;
+  top: 40rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 44px;
   padding: 0 15px;
-  background-color: #ffffff;
-  margin-top: 30px;
+  color: #fff;
+  z-index: 999;
 }
 .barrage-wrap .pop-wrap {
   padding: 20rpx;

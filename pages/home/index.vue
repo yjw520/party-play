@@ -37,7 +37,6 @@
 				<button class="button" @click="goGuessCate">
 					<span class="text">你演我猜</span>
 					<div class="icon">
-						<!-- <BarrageIcon /> -->
 						<image src="../../static/image/barrage.png" mode=""></image>
 					</div>
 				</button>
@@ -116,25 +115,21 @@
 </script>
 
 <style lang="scss">
-	.home-wrap {
-		background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-		height: 100vh;
-		overflow: hidden;
-		.swiper-wrap {
-			margin: 22rpx 26rpx;
-		}
+.home-wrap {
+	background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+	height: 100vh;
+	// overflow: hidden;
+	overflow: scroll;
+	.swiper-wrap {
+		margin: 22rpx 26rpx;
 	}
-	.night-wrap {
-		// width: 100vw;
-		// height: 100vh;
-		position: absolute;
-	}
+}
+.night-wrap {
+	position: absolute;
+}
 .night {
   width: 300rpx;
   height: 600rpx;
-  // height: 100%;
-  // width: 100vw;
-  // height: 100vh;
   transform: rotateZ(45deg);
 }
 

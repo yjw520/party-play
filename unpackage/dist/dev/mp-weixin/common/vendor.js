@@ -780,8 +780,8 @@ function populateParameters(result) {
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
-    uniCompileVersion: "4.06",
-    uniRuntimeVersion: "4.06",
+    uniCompileVersion: "4.07",
+    uniRuntimeVersion: "4.07",
     uniPlatform: undefined || "mp-weixin",
     deviceBrand: deviceBrand,
     deviceModel: model,
@@ -27347,7 +27347,9 @@ exports.default = _default;
 /* 218 */,
 /* 219 */,
 /* 220 */,
-/* 221 */
+/* 221 */,
+/* 222 */,
+/* 223 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-notice-bar/props.js ***!
   \*********************************************************************************************************************/
@@ -27435,14 +27437,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 222 */,
-/* 223 */,
 /* 224 */,
 /* 225 */,
 /* 226 */,
 /* 227 */,
 /* 228 */,
-/* 229 */
+/* 229 */,
+/* 230 */,
+/* 231 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-swiper/props.js ***!
   \*****************************************************************************************************************/
@@ -27585,14 +27587,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 230 */,
-/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
-/* 237 */
+/* 237 */,
+/* 238 */,
+/* 239 */
 /*!*********************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-transition/props.js ***!
   \*********************************************************************************************************************/
@@ -27634,7 +27636,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 238 */
+/* 240 */
 /*!**************************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-transition/transition.js ***!
   \**************************************************************************************************************************/
@@ -27651,7 +27653,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 28));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 31));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 239));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 241));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -27743,7 +27745,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 239 */
+/* 241 */
 /*!****************************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \****************************************************************************************************************************/
@@ -27936,8 +27938,6 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 240 */,
-/* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
@@ -27948,7 +27948,9 @@ exports.default = _default;
 /* 249 */,
 /* 250 */,
 /* 251 */,
-/* 252 */
+/* 252 */,
+/* 253 */,
+/* 254 */
 /*!**********************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-radio-group/props.js ***!
   \**********************************************************************************************************************/
@@ -28050,14 +28052,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 253 */,
-/* 254 */,
 /* 255 */,
 /* 256 */,
 /* 257 */,
 /* 258 */,
 /* 259 */,
-/* 260 */
+/* 260 */,
+/* 261 */,
+/* 262 */
 /*!****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-radio/props.js ***!
   \****************************************************************************************************************/
@@ -28139,14 +28141,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 261 */,
-/* 262 */,
 /* 263 */,
 /* 264 */,
 /* 265 */,
 /* 266 */,
 /* 267 */,
-/* 268 */
+/* 268 */,
+/* 269 */,
+/* 270 */
 /*!***************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-icon/icons.js ***!
   \***************************************************************************************************************/
@@ -28377,7 +28379,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 269 */
+/* 271 */
 /*!***************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-icon/props.js ***!
   \***************************************************************************************************************/
@@ -28484,14 +28486,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 270 */,
-/* 271 */,
 /* 272 */,
 /* 273 */,
 /* 274 */,
 /* 275 */,
 /* 276 */,
-/* 277 */
+/* 277 */,
+/* 278 */,
+/* 279 */
 /*!***********************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/libs/mixin/openType.js ***!
   \***********************************************************************************************************/
@@ -28533,7 +28535,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 278 */
+/* 280 */
 /*!*********************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/libs/mixin/button.js ***!
   \*********************************************************************************************************/
@@ -28563,7 +28565,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 279 */
+/* 281 */
 /*!***********************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-action-sheet/props.js ***!
   \***********************************************************************************************************************/
@@ -28635,14 +28637,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 280 */,
-/* 281 */,
 /* 282 */,
 /* 283 */,
 /* 284 */,
 /* 285 */,
 /* 286 */,
-/* 287 */
+/* 287 */,
+/* 288 */,
+/* 289 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-button/props.js ***!
   \*****************************************************************************************************************/
@@ -28821,14 +28823,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 288 */,
-/* 289 */,
 /* 290 */,
 /* 291 */,
 /* 292 */,
 /* 293 */,
 /* 294 */,
-/* 295 */
+/* 295 */,
+/* 296 */,
+/* 297 */
 /*!****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-popup/props.js ***!
   \****************************************************************************************************************/
@@ -28925,528 +28927,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 296 */,
-/* 297 */,
 /* 298 */,
 /* 299 */,
 /* 300 */,
 /* 301 */,
 /* 302 */,
-/* 303 */
-/*!************************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-column-notice/props.js ***!
-  \************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 显示的内容，字符串
-    text: {
-      type: [Array],
-      default: uni.$u.props.columnNotice.text
-    },
-    // 是否显示左侧的音量图标
-    icon: {
-      type: String,
-      default: uni.$u.props.columnNotice.icon
-    },
-    // 通告模式，link-显示右箭头，closable-显示右侧关闭图标
-    mode: {
-      type: String,
-      default: uni.$u.props.columnNotice.mode
-    },
-    // 文字颜色，各图标也会使用文字颜色
-    color: {
-      type: String,
-      default: uni.$u.props.columnNotice.color
-    },
-    // 背景颜色
-    bgColor: {
-      type: String,
-      default: uni.$u.props.columnNotice.bgColor
-    },
-    // 字体大小，单位px
-    fontSize: {
-      type: [String, Number],
-      default: uni.$u.props.columnNotice.fontSize
-    },
-    // 水平滚动时的滚动速度，即每秒滚动多少px(px)，这有利于控制文字无论多少时，都能有一个恒定的速度
-    speed: {
-      type: [String, Number],
-      default: uni.$u.props.columnNotice.speed
-    },
-    // direction = row时，是否使用步进形式滚动
-    step: {
-      type: Boolean,
-      default: uni.$u.props.columnNotice.step
-    },
-    // 滚动一个周期的时间长，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.columnNotice.duration
-    },
-    // 是否禁止用手滑动切换
-    // 目前HX2.6.11，只支持App 2.5.5+、H5 2.5.5+、支付宝小程序、字节跳动小程序
-    disableTouch: {
-      type: Boolean,
-      default: uni.$u.props.columnNotice.disableTouch
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
+/* 303 */,
 /* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */
-/*!*********************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-row-notice/props.js ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 显示的内容，字符串
-    text: {
-      type: String,
-      default: uni.$u.props.rowNotice.text
-    },
-    // 是否显示左侧的音量图标
-    icon: {
-      type: String,
-      default: uni.$u.props.rowNotice.icon
-    },
-    // 通告模式，link-显示右箭头，closable-显示右侧关闭图标
-    mode: {
-      type: String,
-      default: uni.$u.props.rowNotice.mode
-    },
-    // 文字颜色，各图标也会使用文字颜色
-    color: {
-      type: String,
-      default: uni.$u.props.rowNotice.color
-    },
-    // 背景颜色
-    bgColor: {
-      type: String,
-      default: uni.$u.props.rowNotice.bgColor
-    },
-    // 字体大小，单位px
-    fontSize: {
-      type: [String, Number],
-      default: uni.$u.props.rowNotice.fontSize
-    },
-    // 水平滚动时的滚动速度，即每秒滚动多少px(rpx)，这有利于控制文字无论多少时，都能有一个恒定的速度
-    speed: {
-      type: [String, Number],
-      default: uni.$u.props.rowNotice.speed
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */
-/*!***********************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-loading-icon/props.js ***!
-  \***********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.loadingIcon.show
-    },
-    // 颜色
-    color: {
-      type: String,
-      default: uni.$u.props.loadingIcon.color
-    },
-    // 提示文字颜色
-    textColor: {
-      type: String,
-      default: uni.$u.props.loadingIcon.textColor
-    },
-    // 文字和图标是否垂直排列
-    vertical: {
-      type: Boolean,
-      default: uni.$u.props.loadingIcon.vertical
-    },
-    // 模式选择，circle-圆形，spinner-花朵形，semicircle-半圆形
-    mode: {
-      type: String,
-      default: uni.$u.props.loadingIcon.mode
-    },
-    // 图标大小，单位默认px
-    size: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.size
-    },
-    // 文字大小
-    textSize: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.textSize
-    },
-    // 文字内容
-    text: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.text
-    },
-    // 动画模式
-    timingFunction: {
-      type: String,
-      default: uni.$u.props.loadingIcon.timingFunction
-    },
-    // 动画执行周期时间
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.loadingIcon.duration
-    },
-    // mode=circle时的暗边颜色
-    inactiveColor: {
-      type: String,
-      default: uni.$u.props.loadingIcon.inactiveColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */
-/*!***************************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-swiper-indicator/props.js ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 轮播的长度
-    length: {
-      type: [String, Number],
-      default: uni.$u.props.swiperIndicator.length
-    },
-    // 当前处于活动状态的轮播的索引
-    current: {
-      type: [String, Number],
-      default: uni.$u.props.swiperIndicator.current
-    },
-    // 指示器非激活颜色
-    indicatorActiveColor: {
-      type: String,
-      default: uni.$u.props.swiperIndicator.indicatorActiveColor
-    },
-    // 指示器的激活颜色
-    indicatorInactiveColor: {
-      type: String,
-      default: uni.$u.props.swiperIndicator.indicatorInactiveColor
-    },
-    // 指示器模式，line-线型，dot-点型
-    indicatorMode: {
-      type: String,
-      default: uni.$u.props.swiperIndicator.indicatorMode
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */
-/*!***************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-line/props.js ***!
-  \***************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    color: {
-      type: String,
-      default: uni.$u.props.line.color
-    },
-    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
-    length: {
-      type: [String, Number],
-      default: uni.$u.props.line.length
-    },
-    // 线条方向，col-竖向，row-横向
-    direction: {
-      type: String,
-      default: uni.$u.props.line.direction
-    },
-    // 是否显示细边框
-    hairline: {
-      type: Boolean,
-      default: uni.$u.props.line.hairline
-    },
-    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
-    margin: {
-      type: [String, Number],
-      default: uni.$u.props.line.margin
-    },
-    // 是否虚线，true-虚线，false-实线
-    dashed: {
-      type: Boolean,
-      default: uni.$u.props.line.dashed
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */
-/*!**************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-gap/props.js ***!
-  \**************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 背景颜色（默认transparent）
-    bgColor: {
-      type: String,
-      default: uni.$u.props.gap.bgColor
-    },
-    // 分割槽高度，单位px（默认30）
-    height: {
-      type: [String, Number],
-      default: uni.$u.props.gap.height
-    },
-    // 与上一个组件的距离
-    marginTop: {
-      type: [String, Number],
-      default: uni.$u.props.gap.marginTop
-    },
-    // 与下一个组件的距离
-    marginBottom: {
-      type: [String, Number],
-      default: uni.$u.props.gap.marginBottom
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */
-/*!******************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-overlay/props.js ***!
-  \******************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示遮罩
-    show: {
-      type: Boolean,
-      default: uni.$u.props.overlay.show
-    },
-    // 层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.zIndex
-    },
-    // 遮罩的过渡时间，单位为ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.duration
-    },
-    // 不透明度值，当做rgba的第四个参数
-    opacity: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.opacity
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */
-/*!*********************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-status-bar/props.js ***!
-  \*********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    bgColor: {
-      type: String,
-      default: uni.$u.props.statusBar.bgColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */
-/*!**********************************************************************************************************************!*\
-  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
-  \**********************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {}
-};
-exports.default = _default;
-
-/***/ }),
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */
+/* 305 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-switch/props.js ***!
   \*****************************************************************************************************************/
@@ -29518,14 +29006,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */
 /*!****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-input/props.js ***!
   \****************************************************************************************************************/
@@ -29730,12 +29218,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 400 */,
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */
 /*!*****************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-slider/props.js ***!
   \*****************************************************************************************************************/
@@ -29807,14 +29295,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 406 */,
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */
 /*!**************************************************************************************************************!*\
   !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-tag/props.js ***!
   \**************************************************************************************************************/
@@ -29914,6 +29402,504 @@ var _default = {
 };
 exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */
+/*!************************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-column-notice/props.js ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 显示的内容，字符串
+    text: {
+      type: [Array],
+      default: uni.$u.props.columnNotice.text
+    },
+    // 是否显示左侧的音量图标
+    icon: {
+      type: String,
+      default: uni.$u.props.columnNotice.icon
+    },
+    // 通告模式，link-显示右箭头，closable-显示右侧关闭图标
+    mode: {
+      type: String,
+      default: uni.$u.props.columnNotice.mode
+    },
+    // 文字颜色，各图标也会使用文字颜色
+    color: {
+      type: String,
+      default: uni.$u.props.columnNotice.color
+    },
+    // 背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.columnNotice.bgColor
+    },
+    // 字体大小，单位px
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.columnNotice.fontSize
+    },
+    // 水平滚动时的滚动速度，即每秒滚动多少px(px)，这有利于控制文字无论多少时，都能有一个恒定的速度
+    speed: {
+      type: [String, Number],
+      default: uni.$u.props.columnNotice.speed
+    },
+    // direction = row时，是否使用步进形式滚动
+    step: {
+      type: Boolean,
+      default: uni.$u.props.columnNotice.step
+    },
+    // 滚动一个周期的时间长，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.columnNotice.duration
+    },
+    // 是否禁止用手滑动切换
+    // 目前HX2.6.11，只支持App 2.5.5+、H5 2.5.5+、支付宝小程序、字节跳动小程序
+    disableTouch: {
+      type: Boolean,
+      default: uni.$u.props.columnNotice.disableTouch
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */
+/*!*********************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-row-notice/props.js ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 显示的内容，字符串
+    text: {
+      type: String,
+      default: uni.$u.props.rowNotice.text
+    },
+    // 是否显示左侧的音量图标
+    icon: {
+      type: String,
+      default: uni.$u.props.rowNotice.icon
+    },
+    // 通告模式，link-显示右箭头，closable-显示右侧关闭图标
+    mode: {
+      type: String,
+      default: uni.$u.props.rowNotice.mode
+    },
+    // 文字颜色，各图标也会使用文字颜色
+    color: {
+      type: String,
+      default: uni.$u.props.rowNotice.color
+    },
+    // 背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.rowNotice.bgColor
+    },
+    // 字体大小，单位px
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.rowNotice.fontSize
+    },
+    // 水平滚动时的滚动速度，即每秒滚动多少px(rpx)，这有利于控制文字无论多少时，都能有一个恒定的速度
+    speed: {
+      type: [String, Number],
+      default: uni.$u.props.rowNotice.speed
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */
+/*!***********************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否显示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.show
+    },
+    // 颜色
+    color: {
+      type: String,
+      default: uni.$u.props.loadingIcon.color
+    },
+    // 提示文字颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.textColor
+    },
+    // 文字和图标是否垂直排列
+    vertical: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.vertical
+    },
+    // 模式选择，circle-圆形，spinner-花朵形，semicircle-半圆形
+    mode: {
+      type: String,
+      default: uni.$u.props.loadingIcon.mode
+    },
+    // 图标大小，单位默认px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.size
+    },
+    // 文字大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.textSize
+    },
+    // 文字内容
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.text
+    },
+    // 动画模式
+    timingFunction: {
+      type: String,
+      default: uni.$u.props.loadingIcon.timingFunction
+    },
+    // 动画执行周期时间
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.duration
+    },
+    // mode=circle时的暗边颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.inactiveColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */
+/*!***************************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-swiper-indicator/props.js ***!
+  \***************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 轮播的长度
+    length: {
+      type: [String, Number],
+      default: uni.$u.props.swiperIndicator.length
+    },
+    // 当前处于活动状态的轮播的索引
+    current: {
+      type: [String, Number],
+      default: uni.$u.props.swiperIndicator.current
+    },
+    // 指示器非激活颜色
+    indicatorActiveColor: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorActiveColor
+    },
+    // 指示器的激活颜色
+    indicatorInactiveColor: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorInactiveColor
+    },
+    // 指示器模式，line-线型，dot-点型
+    indicatorMode: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorMode
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-line/props.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    color: {
+      type: String,
+      default: uni.$u.props.line.color
+    },
+    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
+    length: {
+      type: [String, Number],
+      default: uni.$u.props.line.length
+    },
+    // 线条方向，col-竖向，row-横向
+    direction: {
+      type: String,
+      default: uni.$u.props.line.direction
+    },
+    // 是否显示细边框
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.line.hairline
+    },
+    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
+    margin: {
+      type: [String, Number],
+      default: uni.$u.props.line.margin
+    },
+    // 是否虚线，true-虚线，false-实线
+    dashed: {
+      type: Boolean,
+      default: uni.$u.props.line.dashed
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */
+/*!**************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-gap/props.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 背景颜色（默认transparent）
+    bgColor: {
+      type: String,
+      default: uni.$u.props.gap.bgColor
+    },
+    // 分割槽高度，单位px（默认30）
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.gap.height
+    },
+    // 与上一个组件的距离
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginTop
+    },
+    // 与下一个组件的距离
+    marginBottom: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginBottom
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */
+/*!******************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-overlay/props.js ***!
+  \******************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show
+    },
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex
+    },
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration
+    },
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */
+/*!*********************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-status-bar/props.js ***!
+  \*********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    bgColor: {
+      type: String,
+      default: uni.$u.props.statusBar.bgColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */
+/*!**********************************************************************************************************************!*\
+  !*** /Users/jaredwyin/Documents/HBuilderProjects/party-play/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {}
+};
+exports.default = _default;
 
 /***/ })
 ]]);
