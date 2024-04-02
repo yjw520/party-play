@@ -29,7 +29,7 @@
   color: #fff;
 }
 .barrage-wrap .custom-nav-bar {
-  position: relative;
+  position: fixed;
   top: 40rpx;
   display: flex;
   align-items: center;
@@ -94,7 +94,6 @@
 }
 .barrage-wrap .footer-wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   color: #fff;
   position: fixed;
@@ -104,6 +103,7 @@
 .barrage-wrap .footer-wrap .footer-item {
   display: flex;
   flex-direction: column;
+  flex: 1;
   padding: 32rpx 60rpx;
   font-size: 28rpx;
   align-items: center;

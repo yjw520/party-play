@@ -90,8 +90,11 @@
 	        },
 			methods: {
 				goGuessCate() {
+					// uni.navigateTo({
+					// 	url: '/pages/guess-category/index',
+					// });
 					uni.navigateTo({
-						url: '/pages/guess-category/index',
+						url: '/pages/test/index',
 					});
 				},
 				goBarrage() {
@@ -102,7 +105,7 @@
 				goBarrage2() {
 					uni.navigateTo({
 						url: '/pages/test/index',
-					})
+					});
 				}
 			},
 			onShow() {
@@ -395,7 +398,10 @@ img {
 .bulb {
   font-size: 1rem;
   width: 3.375em;
-  height: 11.5em;
+  // width: 1.6875em;
+  // height: 11.5em;
+  height: 15em;
+  // height: 5.75em;
   // width: 6.75rpx;
   // height: 23rpx;
   margin: 0 auto;

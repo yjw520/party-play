@@ -313,7 +313,7 @@
 .bulb {
   font-size: 1rem;
   width: 3.375em;
-  height: 11.5em;
+  height: 15em;
   margin: 0 auto;
   -webkit-transform-origin: center top;
           transform-origin: center top;

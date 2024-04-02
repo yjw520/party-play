@@ -1,26 +1,25 @@
 {
-  "description": "项目配置文件。",
+  "appid": "wxd5ebe911400e3d84",
+  "compileType": "miniprogram",
+  "libVersion": "3.4.0",
   "packOptions": {
     "ignore": [],
     "include": []
   },
   "setting": {
-    "urlCheck": false,
+    "coverView": true,
     "es6": true,
     "postcss": true,
-    "minified": false,
-    "newFeature": true,
-    "bigPackageSizeSupport": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     }
   },
-  "compileType": "miniprogram",
-  "libVersion": "3.4.0",
-  "appid": "wxd5ebe911400e3d84",
-  "projectname": "party-play",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",

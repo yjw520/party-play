@@ -1,7 +1,7 @@
 <template>
 	<view class="barrage-wrap">
-		<view class="custom-nav-bar">
-			<view class="bar-content">
+		<view class="custom-nav-bar" :style="{ top: barTop + 'px', height: barH + 'px' }">
+			<view class="bar-content" @click="goBack">
 				<u-icon size="32" name="arrow-left" color="#fff"></u-icon>
 			</view>
 		</view>
@@ -16,15 +16,15 @@
 				<text>文字</text>
 			</view>
 			<view class="footer-item" @click="open({ active: 'pattern' })">
-				<u-icon size="32" name="list-dot"></u-icon>
-				<text>开心</text>
+				<u-icon size="32" name="thumb-up"></u-icon>
+				<text>模式</text>
 			</view>
 			<view class="footer-item" @click="open({ active: 'font' })">
-				<u-icon size="32" name="list-dot"></u-icon>
+				<u-icon size="32" name="grid-fill"></u-icon>
 				<text>颜色</text>
 			</view>
 			<view class="footer-item" @click="open({ active: 'speed' })">
-				<u-icon size="32" name="list-dot"></u-icon>
+				<u-icon size="32" name="arrow-right-double"></u-icon>
 				<text>速度</text>
 			</view class="footer-item">
 		</view>
@@ -93,6 +93,8 @@
 				tagArray: ['#FF0000', '#FF5733', '#FFFF00', '#00FF00', '#fff', '#0000FF', '#7F3C8D'],
 				slider: 50,
 				fontSize: 250,
+				barTop: 0,
+				barH: 32,
 			};
 		},
 		methods: {
@@ -195,6 +197,16 @@
 					barrageAnimation();
 				}, duration + 100);
 			},
+			getBarHeihgt(sysInfo) {
+				console.log(sysInfo);
+				const capH = uni.getMenuButtonBoundingClientRect();
+				console.log(capH);
+				const navH = (capH.top - sysInfo.statusBarHeight) * 2 + capH.height;
+				console.log(navH);
+				this.barTop = capH.top;
+				this.barH = capH.height;
+				return capH;
+			},
 			initRollAnimation() {
 				if (this.pattern) {
 					this.animation.translateX(0).rotate(0).step({
@@ -206,6 +218,9 @@
 					});
 				}
 				this.animationData = this.animation.export();
+			},
+			goBack() {
+				uni.navigateBack();
 			},
 			open(data) {
 			  const { active } = data;
@@ -228,6 +243,7 @@
 
 					that.wH = windowHeight;
 					await that.getBarrageLen();
+					that.getBarHeihgt(res);
 				},
 				fail: function(err){
 					console.error(err);
@@ -252,7 +268,7 @@
 	.barrage-wrap {
 		color: #fff;
 		.custom-nav-bar {
-			position: relative;
+			position: fixed;
 			top: 40rpx;
 			display: flex;
 		    align-items: center;
@@ -327,7 +343,6 @@
 		}
 		.footer-wrap {
 			display: flex;
-			flex-wrap: wrap;
 			justify-content: space-between;
 			color: #fff;
 			position: fixed;
@@ -336,7 +351,7 @@
 			.footer-item {
 				display: flex;
 				flex-direction: column;
-				// flex
+				flex: 1;
 				padding: 32rpx 60rpx;
 				font-size: 28rpx;
 				align-items: center;
