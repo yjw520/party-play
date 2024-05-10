@@ -12,15 +12,8 @@
 				<view class="shooting-star"></view>
 			</view>
 		</view>
-		<div class="bulb-container">
-			<button class="bulb">
-			  <div class="bulb__image">
-				<img src="//www.w3cplus.com/sites/default/files/blogs/2020/2002/bulb-on.png" alt="Swining Light Bulb" />
-			  </div>
-			</button>
-		</div>
 		<view class="notice-bar">
-			<u-notice-bar text="你在干什么？在吃香菜"></u-notice-bar>
+			<u-notice-bar text="你在干什么？在吃香菜" :bg-color="noticeBarBg"></u-notice-bar>
 		</view>
 		<view class="swiper-wrap">
 			<u-swiper
@@ -57,7 +50,7 @@
 			<u-transition :show="show" mode="slide-right">
 			<div class="card" style="--color: #0f2bff">
 			  <button class="button" @click="goBarrage2">
-				<span class="text">Hover</span>
+				<span class="text">夜店手灯</span>
 				<div class="icon">
 				  <svg>
 					<use xlink:href="#arrow-right"></use>
@@ -85,7 +78,8 @@
 						'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-4-desktop.webp',
 						'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-5-desktop.webp',
 						'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-1-desktop.webp'
-					]
+					],
+					noticeBarBg: '#0E1119'
 	            }
 	        },
 			methods: {
@@ -373,182 +367,6 @@
 
 img {
   max-width: 100%;
-}
-.bulb-container {
-  font-size: 1rem;
-  perspective: 1600rpx;
-  position: absolute;
-  z-index: 99;
-  padding-top: 0.5em;
-  margin-bottom: 0.5em;
-  top: 0;
-  right: 40rpx;
-}
-.bulb-container::after {
-  content: "";
-  width: 1.125em;
-  height: 0.5em;
-  background: url(//www.w3cplus.com/sites/default/files/blogs/2020/2002/bulb-top.png);
-  background-size: 100% 100%;
-  position: absolute;
-  left: calc(50% - 0.5625em);
-  top: 0;
-}
-
-.bulb {
-  font-size: 1rem;
-  width: 3.375em;
-  // width: 1.6875em;
-  // height: 11.5em;
-  height: 15em;
-  // height: 5.75em;
-  // width: 6.75rpx;
-  // height: 23rpx;
-  margin: 0 auto;
-  transform-origin: center top;
-  animation: swing 3s ease-in-out infinite alternate;
-  position: relative;
-  transform-style: preserve3d;
-  transition: transform 0.5s ease-out;
-  cursor: pointer;
-  display: block;
-  background: none;
-  border: none;
-  -webkit-appearance: none;
-  padding: 0;
-}
-.bulb:focus {
-  outline-offset: 1rem;
-  outline: none;
-}
-
-.bulb:hover .bulb__image img,
-.bulb:focus .bulb__image img,
-.bulb:active .bulb__image img {
-  outline: none;
-  animation: flicker 2s linear infinite alternate;
-}
-
-.bulb:hover .bulb__image::before,
-.bulb:focus .bulb__image::before,
-.bulb:active .bulb__image::before {
-  outline: none;
-  animation: flicker-light 2s linear infinite alternate;
-}
-
-.bulb__image {
-  outline: none;
-  transform-style: preserve3d;
-  display: block;
-  transform-origin: center top;
-  animation: scale 2.5s -1.5s ease-in-out infinite alternate;
-  position: relative;
-}
-.bulb__image::before {
-  content: "";
-  position: absolute;
-  left: calc(50% - 1px);
-  bottom: 0;
-  width: 0.625em;
-  height: 0.625em;
-  background: transparent;
-  border-radius: 50%;
-  z-index: -1;
-  box-shadow: 0 0 6.375em 4em rgb(160, 131, 3);
-  opacity: 0.6;
-  transform: scaleY(0.7) translateY(-1em) translateX(0.4em);
-  transform-origin: center top;
-}
-
-.bulb__image img {
-  display: block;
-  /* filter: saturate(0); */
-  filter: hue-rotate(236deg);
-  width: 3.375em;
-}
-
-@keyframes swing {
-  0% {
-    transform: rotate(4deg);
-  }
-
-  100% {
-    transform: rotate(-4deg);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(0.98);
-  }
-
-  100% {
-    transform: scale(1.02);
-  }
-}
-
-@keyframes flicker {
-  0%,
-  4%,
-  8%,
-  12%,
-  20%,
-  30%,
-  40%,
-  50%,
-  100% {
-    filter: saturate(0);
-  }
-
-  2%,
-  6%,
-  10% {
-    filter: saturate(1.4);
-  }
-
-  25%,
-  35%,
-  45% {
-    filter: saturate(1.6);
-  }
-
-  80% {
-    filter: saturate(3);
-  }
-}
-
-@keyframes flicker-light {
-  0%,
-  4%,
-  8%,
-  12%,
-  20%,
-  30%,
-  40%,
-  50%,
-  100% {
-    filter: saturate(0);
-    opacity: 0.5;
-  }
-
-  2%,
-  6%,
-  10% {
-    filter: saturate(1.4);
-    opacity: 0.6;
-  }
-
-  25%,
-  35%,
-  45% {
-    filter: saturate(1.6);
-    opacity: 0.6;
-  }
-
-  80% {
-    filter: saturate(3);
-    opacity: 0.7;
-  }
 }
 
 

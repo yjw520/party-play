@@ -198,11 +198,9 @@
 				}, duration + 100);
 			},
 			getBarHeihgt(sysInfo) {
-				console.log(sysInfo);
 				const capH = uni.getMenuButtonBoundingClientRect();
-				console.log(capH);
 				const navH = (capH.top - sysInfo.statusBarHeight) * 2 + capH.height;
-				console.log(navH);
+
 				this.barTop = capH.top;
 				this.barH = capH.height;
 				return capH;
