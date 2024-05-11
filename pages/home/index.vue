@@ -27,7 +27,7 @@
 		<view class="">
 			<u-transition :show="show" mode="slide-right">
 			<div class="card" style="--color: #00afaf">
-				<button class="button" @click="goGuessCate">
+				<button class="button" @click="goPage(PAGE_PATH.TEST)">
 					<span class="text">你演我猜</span>
 					<div class="icon">
 						<image src="../../static/image/barrage.png" mode=""></image>
@@ -37,7 +37,7 @@
 			</u-transition>
 			<u-transition :show="show" mode="slide-left">
 			<div class="card" style="--color: #00bb00">
-			  <button class="button" @click="goBarrage">
+			  <button class="button" @click="goPage(PAGE_PATH.BARRAGE)">
 				<span class="text">手持弹幕</span>
 				<div class="icon">
 				  <svg>
@@ -49,7 +49,7 @@
 			</u-transition>
 			<u-transition :show="show" mode="slide-right">
 			<div class="card" style="--color: #0f2bff">
-			  <button class="button" @click="goBarrage2">
+			  <button class="button" @click="goPage(PAGE_PATH.HAND_LIGHT)">
 				<span class="text">夜店手灯</span>
 				<div class="icon">
 				  <svg>
@@ -65,12 +65,22 @@
 
 <script>
 	 import BarrageIcon from '../icon/barrage.vue';
+	 
+	 const PAGE_PATH = {
+		 GUESS_CATE: '/pages/guess-category/index',
+		 BARRAGE: '/pages/barrage/index',
+		 BARRAGE2: '/pages/test/index',
+		 TEST: '/pages/test/index',
+		 HAND_LIGHT: '/pages/handlight/index'
+	 };
+	 
 	 export default {
 		 components: {
 			 BarrageIcon,
 		 },
 	        data() {
 	            return {
+					PAGE_PATH,
 	                show: true,
 					swiperList: [
 						'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-3-desktop.webp',
@@ -83,22 +93,9 @@
 	            }
 	        },
 			methods: {
-				goGuessCate() {
-					// uni.navigateTo({
-					// 	url: '/pages/guess-category/index',
-					// });
+				goPage(url) {
 					uni.navigateTo({
-						url: '/pages/test/index',
-					});
-				},
-				goBarrage() {
-					uni.navigateTo({
-						url: '/pages/barrage/index',
-					});
-				},
-				goBarrage2() {
-					uni.navigateTo({
-						url: '/pages/test/index',
+						url,
 					});
 				}
 			},

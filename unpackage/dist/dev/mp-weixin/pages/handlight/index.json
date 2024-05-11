@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "夜店手灯",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon"
+  }
+}

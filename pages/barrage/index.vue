@@ -350,7 +350,7 @@
 				display: flex;
 				flex-direction: column;
 				flex: 1;
-				padding: 32rpx 60rpx;
+				padding: 36rpx 0rpx;
 				font-size: 28rpx;
 				align-items: center;
 			}

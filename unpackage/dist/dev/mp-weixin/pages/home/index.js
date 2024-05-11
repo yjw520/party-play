@@ -101,13 +101,13 @@ var components
 try {
   components = {
     uNoticeBar: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-notice-bar/u-notice-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-notice-bar/u-notice-bar")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-notice-bar/u-notice-bar.vue */ 209))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-notice-bar/u-notice-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-notice-bar/u-notice-bar")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-notice-bar/u-notice-bar.vue */ 217))
     },
     uSwiper: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-swiper/u-swiper */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-swiper/u-swiper")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-swiper/u-swiper.vue */ 217))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-swiper/u-swiper */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-swiper/u-swiper")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-swiper/u-swiper.vue */ 225))
     },
     uTransition: function () {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-transition/u-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-transition/u-transition")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-transition/u-transition.vue */ 225))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-transition/u-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-transition/u-transition")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-transition/u-transition.vue */ 233))
     },
   }
 } catch (e) {
@@ -172,8 +172,15 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var BarrageIcon = function BarrageIcon() {
   __webpack_require__.e(/*! require.ensure | pages/icon/barrage */ "pages/icon/barrage").then((function () {
-    return resolve(__webpack_require__(/*! ../icon/barrage.vue */ 235));
+    return resolve(__webpack_require__(/*! ../icon/barrage.vue */ 243));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
+var PAGE_PATH = {
+  GUESS_CATE: '/pages/guess-category/index',
+  BARRAGE: '/pages/barrage/index',
+  BARRAGE2: '/pages/test/index',
+  TEST: '/pages/test/index',
+  HAND_LIGHT: '/pages/handlight/index'
 };
 var _default = {
   components: {
@@ -181,28 +188,16 @@ var _default = {
   },
   data: function data() {
     return {
+      PAGE_PATH: PAGE_PATH,
       show: true,
       swiperList: ['https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-3-desktop.webp', 'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-2-desktop.webp', 'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-4-desktop.webp', 'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-5-desktop.webp', 'https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/dropdown-menu/images/img-1-desktop.webp'],
       noticeBarBg: '#0E1119'
     };
   },
   methods: {
-    goGuessCate: function goGuessCate() {
-      // uni.navigateTo({
-      // 	url: '/pages/guess-category/index',
-      // });
+    goPage: function goPage(url) {
       uni.navigateTo({
-        url: '/pages/test/index'
-      });
-    },
-    goBarrage: function goBarrage() {
-      uni.navigateTo({
-        url: '/pages/barrage/index'
-      });
-    },
-    goBarrage2: function goBarrage2() {
-      uni.navigateTo({
-        url: '/pages/test/index'
+        url: url
       });
     }
   },

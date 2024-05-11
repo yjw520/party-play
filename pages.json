@@ -48,6 +48,13 @@
 			"style": {
 				"navigationBarTitleText": "手持弹幕"
 			}
+		},
+		{
+			"path": "pages/handlight/index",
+			"style": {
+				"navigationBarTitleText": "夜店手灯",
+				"navigationStyle": "custom"
+			}
 		}
 	],
 	"tabBar": {

@@ -6,7 +6,8 @@
     "pages/guess-category/index",
     "pages/guess-category/category-process/index",
     "pages/barrage/index",
-    "pages/test/index"
+    "pages/test/index",
+    "pages/handlight/index"
   ],
   "subPackages": [],
   "window": {
