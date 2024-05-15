@@ -100,8 +100,17 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
+    uTransition: function () {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-transition/u-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-transition/u-transition")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-transition/u-transition.vue */ 233))
+    },
     uIcon: function () {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 264))
+    },
+    uBadge: function () {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-badge/u-badge */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-badge/u-badge")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-badge/u-badge.vue */ 337))
+    },
+    uToast: function () {
+      return __webpack_require__.e(/*! import() | node-modules/uview-ui/components/u-toast/u-toast */ "node-modules/uview-ui/components/u-toast/u-toast").then(__webpack_require__.bind(null, /*! uview-ui/components/u-toast/u-toast.vue */ 345))
     },
   }
 } catch (e) {
@@ -167,6 +176,21 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 56));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58));
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -198,21 +222,38 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 //
 //
 
-var BOARD_TYPE = ['borad', 'front', 'back'];
+var BOARD_TYPE = ['board', 'back', 'front'];
+var LIGHT_COLOR_TYPE = ['COLOR_TYPE1', 'COLOR_TYPE2', 'COLOR_TYPE3'];
+var LIGHT_COLOR_TYPE_MAP = {
+  'COLOR_TYPE1': ['black', 'red'],
+  'COLOR_TYPE2': ['red', 'blue', 'green'],
+  'COLOR_TYPE3': ['blue', 'green']
+};
+var CHANGE_SPEED = [300, 250, 200, 100, 80, 50];
+var CAMERA_TYPE = {
+  board: '摄像已关闭',
+  back: '后置摄像头已打开',
+  front: '前置摄像头已打开'
+};
 var _default = {
   data: function data() {
     return {
       barTop: 0,
       barH: 32,
-      // bgType: BOARD_TYPE.BOARD,
-      // devicePosition: 'front',
-      curBgTypeIndex: 0
+      bgType: BOARD_TYPE[0],
+      curBgTypeIndex: 0,
+      isNotFullScreen: true,
+      bgColorType: LIGHT_COLOR_TYPE[0],
+      bgColor: '',
+      curBgColorTypeIndex: 0,
+      curBgColorIndex: 0,
+      bgColorChangeSpeed: CHANGE_SPEED[0],
+      timer: null,
+      type: 'primary',
+      curSpeedIndex: 0,
+      flashlight: false,
+      flash: 'off'
     };
-  },
-  computed: {
-    bgType: function bgType() {
-      return BOARD_TYPE[this.curBgTypeIndex];
-    }
   },
   methods: {
     getBarHeihgt: function getBarHeihgt(sysInfo) {
@@ -224,13 +265,59 @@ var _default = {
       uni.navigateBack();
     },
     touchScreen: function touchScreen() {
-      console.log(666);
+      this.isNotFullScreen = !this.isNotFullScreen;
     },
-    changesStyle: function changesStyle() {},
-    changeSpeed: function changeSpeed() {},
+    changesStyle: function changesStyle() {
+      this.curBgColorTypeIndex = (this.curBgColorTypeIndex + 1) % LIGHT_COLOR_TYPE.length;
+      this.bgColorType = LIGHT_COLOR_TYPE[this.curBgColorTypeIndex];
+      this.curBgColorIndex = 0;
+    },
+    changeSpeed: function changeSpeed() {
+      this.curSpeedIndex = (this.curSpeedIndex + 1) % CHANGE_SPEED.length;
+      this.bgColorChangeSpeed = CHANGE_SPEED[this.curSpeedIndex];
+      this.initLight();
+    },
     toggleCamera: function toggleCamera() {
+      if (this.flashlight) {
+        this.flashlight = false;
+      }
       this.curBgTypeIndex = (this.curBgTypeIndex + 1) % BOARD_TYPE.length;
-      console.log(this.bgType);
+      this.bgType = BOARD_TYPE[this.curBgTypeIndex];
+      this.showToast({
+        duration: 500,
+        message: CAMERA_TYPE[this.bgType]
+      });
+    },
+    toggleFlashlight: function toggleFlashlight() {
+      this.flashlight = !this.flashlight;
+      var flash = this.flashlight ? 'torch' : 'off';
+      var bgType = this.flashlight ? 'back' : 'board';
+      this.bgType = bgType;
+      this.flash = flash;
+    },
+    lightChange: function lightChange() {
+      var lightColorType = LIGHT_COLOR_TYPE_MAP[this.bgColorType];
+      this.curBgColorIndex = (this.curBgColorIndex + 1) % lightColorType.length;
+      this.bgColor = lightColorType[this.curBgColorIndex];
+    },
+    initLight: function initLight() {
+      var _this = this;
+      clearInterval(this.timer);
+      this.timer = setInterval(function () {
+        _this.lightChange();
+      }, this.bgColorChangeSpeed);
+    },
+    setScreenBrightness: function setScreenBrightness() {
+      uni.setScreenBrightness({
+        value: 1,
+        success: function success() {},
+        fail: function fail() {
+          console.error('屏幕亮度设置失败');
+        }
+      });
+    },
+    showToast: function showToast(params) {
+      this.$refs.uToast.show(_objectSpread({}, params));
     }
   },
   onLoad: function onLoad() {
@@ -259,6 +346,11 @@ var _default = {
         console.error(err);
       }
     });
+    this.initLight();
+    this.setScreenBrightness();
+  },
+  onUnload: function onUnload() {
+    clearInterval(this.timer);
   }
 };
 exports.default = _default;

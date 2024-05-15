@@ -100,6 +100,9 @@ __webpack_require__.r(__webpack_exports__);
 var components
 try {
   components = {
+    uTransition: function () {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-transition/u-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-transition/u-transition")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-transition/u-transition.vue */ 233))
+    },
     uIcon: function () {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-icon/u-icon.vue */ 264))
     },
@@ -259,6 +262,13 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default = {
   data: function data() {
     return {
@@ -280,7 +290,8 @@ var _default = {
       slider: 50,
       fontSize: 250,
       barTop: 0,
-      barH: 32
+      barH: 32,
+      isNotFullScreen: true
     };
   },
   methods: {
@@ -429,6 +440,10 @@ var _default = {
       if (this.op === 'text') {
         this.text = '';
       }
+    },
+    touchScreen: function touchScreen() {
+      this.isNotFullScreen = !this.isNotFullScreen;
+      console.log(66);
     }
   },
   onLoad: function onLoad() {

@@ -25,10 +25,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.barrage-wrap {
-  color: #fff;
-}
-.barrage-wrap .custom-nav-bar {
+.custom-nav-bar {
   position: fixed;
   top: 40rpx;
   display: flex;
@@ -39,39 +36,8 @@
   color: #fff;
   z-index: 999;
 }
-.barrage-wrap .pop-wrap {
-  padding: 20rpx;
-}
-.barrage-wrap .pop-wrap .barrage-pattern {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20rpx 66rpx 10rpx;
-}
-.barrage-wrap .pop-wrap .barrage-poptext {
-  display: flex;
-  align-items: center;
-  padding: 20rpx 66rpx 10rpx;
-}
-.barrage-wrap .pop-wrap .barrage-poptext .pop-button {
-  width: 120rpx;
-  margin-left: 20rpx;
-}
-.barrage-wrap .pop-wrap .barrage-font {
-  display: flex;
-  padding: 20rpx 66rpx 10rpx;
-  flex-direction: column;
-}
-.barrage-wrap .pop-wrap .barrage-font .barrage-font-color {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20rpx;
-}
-.barrage-wrap .pop-wrap .barrage-font .barrage-size {
-  margin-left: 20rpx;
-}
-.barrage-wrap .pop-wrap .barrage-font .color-text {
-  margin-left: 20rpx;
+.barrage-wrap {
+  color: #fff;
 }
 .barrage-wrap .barrage-text-wrap {
   width: 100vh;
@@ -92,7 +58,42 @@
   font-size: 80px;
   right: -400px;
 }
-.barrage-wrap .footer-wrap {
+.pop-wrap {
+  color: #fff;
+  padding: 20rpx;
+}
+.pop-wrap .barrage-pattern {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 66rpx 10rpx;
+}
+.pop-wrap .barrage-poptext {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 66rpx 10rpx;
+}
+.pop-wrap .barrage-poptext .pop-button {
+  width: 120rpx;
+  margin-left: 20rpx;
+}
+.pop-wrap .barrage-font {
+  display: flex;
+  padding: 20rpx 66rpx 10rpx;
+  flex-direction: column;
+}
+.pop-wrap .barrage-font .barrage-font-color {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+}
+.pop-wrap .barrage-font .barrage-size {
+  margin-left: 20rpx;
+}
+.pop-wrap .barrage-font .color-text {
+  margin-left: 20rpx;
+}
+.footer-wrap {
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -100,7 +101,7 @@
   bottom: 0px;
   width: 100%;
 }
-.barrage-wrap .footer-wrap .footer-item {
+.footer-wrap .footer-item {
   display: flex;
   flex-direction: column;
   flex: 1;

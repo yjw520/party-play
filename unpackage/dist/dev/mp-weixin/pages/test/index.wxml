@@ -1,1 +1,1 @@
-<view>敬情期待</view>
+<view><u-alert vue-id="387b56f8-1" title="努力开发中......" type="warning" description="预告: 接下会开发个人中心/圈子,提供发布个人聚会内容以及发起聚会活动的功能,方便统计各项数据,可包括投票/记账等等" bind:__l="__l"></u-alert></view>

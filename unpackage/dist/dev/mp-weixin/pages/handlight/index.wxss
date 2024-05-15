@@ -25,11 +25,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.light-wrap {
-  background: #000;
-  height: 100vh;
-}
-.light-wrap .custom-nav-bar {
+.custom-nav-bar {
   position: fixed;
   top: 40rpx;
   display: flex;
@@ -38,13 +34,24 @@
   height: 44px;
   padding: 0 15px;
   color: #fff;
-  z-index: 999;
+  z-index: 9999;
 }
-.light-wrap .camera {
+.light-wrap {
+  background: #000;
+  height: 100vh;
+}
+.camera {
   width: 100%;
   height: 100vh;
 }
-.light-wrap .footer-wrap {
+.camera .camera-content {
+  height: 100%;
+  opacity: .3;
+}
+.camera .camera-cover {
+  height: 100%;
+}
+.footer-wrap {
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -52,12 +59,27 @@
   bottom: 0px;
   width: 100%;
 }
-.light-wrap .footer-wrap .footer-item {
+.footer-wrap .footer-item {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 36rpx 0rpx;
   font-size: 28rpx;
   align-items: center;
+}
+.footer-wrap .badge {
+  z-index: 99;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.black {
+  background-color: #000;
 }
 

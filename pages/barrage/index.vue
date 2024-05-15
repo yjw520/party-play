@@ -1,32 +1,19 @@
 <template>
-	<view class="barrage-wrap">
-		<view class="custom-nav-bar" :style="{ top: barTop + 'px', height: barH + 'px' }">
-			<view class="bar-content" @click="goBack">
-				<u-icon size="32" name="arrow-left" color="#fff"></u-icon>
+	<view>
+		<u-transition :show="isNotFullScreen" mode="fade">
+			<view class="custom-nav-bar" :style="{ top: barTop + 'px', height: barH + 'px' }">
+				<view @click="goBack">
+					<u-icon size="32" name="arrow-left" color="#fff"></u-icon>
+				</view>
 			</view>
-		</view>
-		<view class="barrage-text-wrap">
-			<text class="barrage-text" :animation="animationData"
-				:style="{ right: barrageRight + 'px', color: barrageColor, fontSize: fontSize + 'rpx',  }"
-			>{{ displayText }}</text>
-		</view>
-		<view class="footer-wrap">
-			<view class="footer-item" @click="open({ active: 'text' })">
-				<u-icon size="32" name="list-dot"></u-icon>
-				<text>文字</text>
+		</u-transition>
+		
+		<view class="barrage-wrap" @click="touchScreen">
+			<view class="barrage-text-wrap">
+				<text class="barrage-text" :animation="animationData"
+					:style="{ right: barrageRight + 'px', color: barrageColor, fontSize: fontSize + 'rpx',  }"
+				>{{ displayText }}</text>
 			</view>
-			<view class="footer-item" @click="open({ active: 'pattern' })">
-				<u-icon size="32" name="thumb-up"></u-icon>
-				<text>模式</text>
-			</view>
-			<view class="footer-item" @click="open({ active: 'font' })">
-				<u-icon size="32" name="grid-fill"></u-icon>
-				<text>颜色</text>
-			</view>
-			<view class="footer-item" @click="open({ active: 'speed' })">
-				<u-icon size="32" name="arrow-right-double"></u-icon>
-				<text>速度</text>
-			</view class="footer-item">
 		</view>
 		<u-popup :show="patternShow" @close="close" bgColor="rgba(65, 65, 65, 0.5)">
 			<view class="pop-wrap">
@@ -48,7 +35,7 @@
 						</u--input>
 					</view>
 					<view class="pop-button">
-						<u-button type="primary" text="发送" @click="changeText"></u-button>
+						<u-button type="primary" text="发送" shape="circle" @click="changeText"></u-button>
 					</view>
 				</view>
 				<view class="barrage-font" v-if="op === 'font'">
@@ -69,6 +56,26 @@
 				</view>
 			</view>
 		</u-popup>
+		<u-transition :show="isNotFullScreen" mode="fade">
+			<view class="footer-wrap">
+				<view class="footer-item" @click="open({ active: 'text' })">
+					<u-icon size="32" name="list-dot"></u-icon>
+					<text>文字</text>
+				</view>
+				<view class="footer-item" @click="open({ active: 'pattern' })">
+					<u-icon size="32" name="thumb-up"></u-icon>
+					<text>模式</text>
+				</view>
+				<view class="footer-item" @click="open({ active: 'font' })">
+					<u-icon size="32" name="grid-fill"></u-icon>
+					<text>颜色</text>
+				</view>
+				<view class="footer-item" @click="open({ active: 'speed' })">
+					<u-icon size="32" name="arrow-right-double"></u-icon>
+					<text>速度</text>
+				</view class="footer-item">
+			</view>
+		</u-transition>
 	</view>
 </template>
 
@@ -95,6 +102,7 @@
 				fontSize: 250,
 				barTop: 0,
 				barH: 32,
+				isNotFullScreen: true
 			};
 		},
 		methods: {
@@ -231,7 +239,11 @@
 			  if (this.op === 'text') {
 				  this.text = '';
 			  }
-			}
+			},
+			touchScreen() {
+				this.isNotFullScreen = !this.isNotFullScreen;
+				console.log(66);
+			},
 		},
 		onLoad() {
 			const that = this;
@@ -263,56 +275,19 @@
 </script>
 
 <style lang="scss">
+	.custom-nav-bar {
+		position: fixed;
+		top: 40rpx;
+		display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    height: 44px;
+	    padding: 0 15px;
+		color: #fff;
+		z-index: 999;
+	}
 	.barrage-wrap {
 		color: #fff;
-		.custom-nav-bar {
-			position: fixed;
-			top: 40rpx;
-			display: flex;
-		    align-items: center;
-		    justify-content: space-between;
-		    height: 44px;
-		    padding: 0 15px;
-			color: #fff;
-			z-index: 999;
-			.bar-content {
-				
-			}
-		}
-		.pop-wrap {
-			padding: 20rpx;
-			.barrage-pattern {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-				padding: 20rpx 66rpx 10rpx;
-			}
-			.barrage-poptext {
-				display: flex;
-				align-items: center;
-				padding: 20rpx 66rpx 10rpx;
-				.pop-button {
-					width: 120rpx;
-					margin-left: 20rpx;
-				}
-			}
-			.barrage-font {
-				display: flex;
-				padding: 20rpx 66rpx 10rpx;
-				flex-direction: column;
-				.barrage-font-color {
-					display: flex;
-					justify-content: space-around;
-					margin-top: 20rpx;
-				}
-				.barrage-size {
-					margin-left: 20rpx;
-				}
-				.color-text {
-					margin-left: 20rpx;
-				}
-			}
-		}
 		.barrage-text-wrap {
 			width: 100vh;
 			height: 100.2vw;
@@ -339,23 +314,57 @@
 				right: -400px;
 			}
 		}
-		.footer-wrap {
+	}
+	.pop-wrap {
+		color: #fff;
+		padding: 20rpx;
+		.barrage-pattern {
 			display: flex;
-			justify-content: space-between;
-			color: #fff;
-			position: fixed;
-			bottom: 0px;
-			width: 100%;
-			.footer-item {
-				display: flex;
-				flex-direction: column;
-				flex: 1;
-				padding: 36rpx 0rpx;
-				font-size: 28rpx;
-				align-items: center;
+			justify-content: space-around;
+			align-items: center;
+			padding: 20rpx 66rpx 10rpx;
+		}
+		.barrage-poptext {
+			display: flex;
+			align-items: center;
+			padding: 20rpx 66rpx 10rpx;
+			.pop-button {
+				width: 120rpx;
+				margin-left: 20rpx;
 			}
-			
+		}
+		.barrage-font {
+			display: flex;
+			padding: 20rpx 66rpx 10rpx;
+			flex-direction: column;
+			.barrage-font-color {
+				display: flex;
+				justify-content: space-around;
+				margin-top: 20rpx;
+			}
+			.barrage-size {
+				margin-left: 20rpx;
+			}
+			.color-text {
+				margin-left: 20rpx;
+			}
 		}
 	}
-	
+	.footer-wrap {
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		position: fixed;
+		bottom: 0px;
+		width: 100%;
+		.footer-item {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			padding: 36rpx 0rpx;
+			font-size: 28rpx;
+			align-items: center;
+		}
+		
+	}
 </style>

@@ -13,7 +13,7 @@
 			</view>
 		</view>
 		<view class="notice-bar">
-			<u-notice-bar text="你在干什么？在吃香菜" :bg-color="noticeBarBg"></u-notice-bar>
+			<u-notice-bar text="你在干什么？在吃香菜(更多功能(发起聚会)敬请期待哦)" :bg-color="noticeBarBg"></u-notice-bar>
 		</view>
 		<view class="swiper-wrap">
 			<u-swiper

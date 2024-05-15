@@ -6,9 +6,10 @@
 		{
 			"path": "pages/home/index",
 			"style": {
-				"navigationBarTitleText": "游戏中心"
-				// "enablePullDownRefresh": true,
-				// "backgroundColor": "#000"
+				"navigationBarTitleText": "游戏中心",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#0E1119"
 			}
 		},
 		{
@@ -58,6 +59,7 @@
 		}
 	],
 	"tabBar": {
+		"custom": true,
 		"color": "#7A7E83",
 		"selectedColor": "#3cc51f",
 		"borderStyle": "black",

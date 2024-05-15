@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "手持弹幕",
-  "usingComponents": {}
+  "usingComponents": {
+    "u-alert": "/node-modules/uview-ui/components/u-alert/u-alert"
+  }
 }

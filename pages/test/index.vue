@@ -1,7 +1,7 @@
 <template>
   <!-- <view :animation="animationData" style="background:red;height:100rpx;width:100rpx"></view> -->
   <view class="">
-  	敬情期待
+  	<u-alert title="努力开发中......" type = "warning" description="预告: 接下会开发个人中心/圈子,提供发布个人聚会内容以及发起聚会活动的功能,方便统计各项数据,可包括投票/记账等等"></u-alert>
   </view>
 </template>
 
